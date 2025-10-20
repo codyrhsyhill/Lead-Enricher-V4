@@ -58,6 +58,9 @@ python3 -m lead_enricher.cli \
 > - If you receive `ERROR: file:///Users/<name> does not appear to be a Python` it
 >   means `python3 -m pip install -e .` was executed outside the repository root.
 >   Run `pwd` to verify you are inside `Lead-Enricher-V4` before retrying.
+> - On older versions of `pip` the editable install expects a `setup.py`. The
+>   repository now ships one, but make sure you pulled the latest changes before
+>   reinstalling.
 > - After installation you *may* call the convenience script `lead-enricher …` from
 >   the virtual environment, but the module form (`python3 -m lead_enricher.cli …`)
 >   always works even if your shell does not expose the script on `PATH`.
