@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lead-enricher"
+version = "0.1.0"
+description = "Offline-friendly scaffolding for enriching UK roofing business leads"
+authors = [{name = "Lead Enricher Dev Team"}]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+lead-enricher = "lead_enricher.cli:main"
+lead-enricher-gui = "lead_enricher.gui:main"
